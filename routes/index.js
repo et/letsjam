@@ -3,22 +3,22 @@
  * GET home page.
  */
 
-var superagent = require('superagent')
+var rest = require('restler')
   , fs = require('fs');
 
 var api_key = process.env.LAST_FM_KEY;
 
-exports.index = function(req, res){
-  superagent.get('http://ws.audioscrobbler.com/2.0/')
-    .query({
-      api_key: api_key
-    , format: 'json'
-    , method: 'geo.getevents'
-    , location: 'boulder'
-    })
-    .end(function(response){
-      if(response.ok) {
-        res.render('index', response.body);
+exports.index = function(req, res) {
+  rest.get('http://ws.audioscrobbler.com/2.0/', {
+      query: {
+        api_key: api_key
+      , format: 'json'
+      , method: 'geo.getevents'
+      , location: 'boulder'
       }
+    })
+    .on('complete', function(result) {
+      console.log(result);
+      res.render('index', result);
     });
 };
