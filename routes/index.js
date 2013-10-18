@@ -9,7 +9,6 @@ var superagent = require('superagent')
 var api_key = process.env.LAST_FM_KEY;
 
 exports.index = function(req, res){
-  var stream = fs.createWriteStream('./lastfm.json');
   superagent.get('http://ws.audioscrobbler.com/2.0/')
     .query({
       api_key: api_key
