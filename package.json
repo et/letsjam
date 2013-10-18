@@ -14,7 +14,7 @@
     "superagent": "~0.15.6",
     "forever": "~0.10.9",
     "bower": "~1.2.7",
-    "grunt": "~0.4.1",
+    "grunt": "~0.4.1"
   },
   "devDependencies": {
     "grunt-contrib-nodeunit": "~0.2.1",
