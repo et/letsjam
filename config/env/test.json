@@ -1,0 +1,6 @@
+{
+  "db": "mongodb://localhost/letsjam-test",
+  "app": {
+    "name": "Let's Jam (Test)"
+  }
+}
