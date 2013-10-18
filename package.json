@@ -1,5 +1,5 @@
 {
-  "name": "application-name",
+  "name": "letsjam",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -8,6 +8,7 @@
   "dependencies": {
     "express": "3.4.0",
     "jade": "*",
-    "mongoose": "~3.6.20"
+    "mongoose": "~3.6.20",
+    "superagent": "~0.15.6"
   }
 }
