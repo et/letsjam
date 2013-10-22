@@ -1,7 +1,7 @@
 window.app.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
   when('/', {
-    templateUrl: 'views/index.html'
+    templateUrl: 'views/events/list.html'
   });
 
 }]);
