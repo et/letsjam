@@ -1,7 +1,14 @@
 {
   "name": "letsjam",
+  "description": "Something",
   "version": "0.0.1",
   "private": true,
+  "author": "Eric Thomas",
+  "repository": "git://github.com/et/letsjam",
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
   "scripts": {
     "start": "node app.js",
     "test": "node node_modules/grunt-cli/bin/grunt test",
