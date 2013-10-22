@@ -1,8 +1,3 @@
 <section data-ng-controller="EventsController" data-ng-init="find()">
-  <ul class="events unstyled">
-    <li data-ng-repeat="event in events">
-      <h2><a data-ng-href="#!/events/{{event._id}}">{{event.title}}</a></h2>
-    </li>
-  </ul>
-  <h1 data-ng-hide="!events || events.length">No events yet.</h1>
+  <leaflet markers="markers" center="boulder" height="600px" width="600px"></leaflet>
 </section>
