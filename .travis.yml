@@ -3,5 +3,7 @@ node_js:
   - 0.14
 env:
   - NODE_ENV=travis
+notifications:
+  email: false
 before_script:
   - npm install -g grunt-cli
