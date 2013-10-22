@@ -1,3 +1,3 @@
-window.app = angular.module('letsjam', ['ngResource', 'leaflet-directive', 'letsjam.events']);
+window.app = angular.module('letsjam', ['ngResource', 'letsjam.events']);
 
 angular.module('letsjam.events', []);
