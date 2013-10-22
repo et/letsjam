@@ -1,21 +1,9 @@
 doctype 5
+!!! 5
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/lib/sass-bootstrap/dist/css/bootstrap.css')
-    link(rel='stylesheet', href='/stylesheets/stylish-portfolio.css')
+  include includes/head
   body
     block content
-
-    // Intro
-    #about.intro
-      .container
-        .row
-          .col-md-6.col-md-offset-3.text-center
-            h2 Subtle Sidebar is the Perfect Template for your Next Portfolio Website Project!
-            p.lead
-              | Some shit
-              | .
 
     // Map
     #contact.map
@@ -23,3 +11,4 @@ html
         br
           small
             a(href='https://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=Boulder,+CO&aq=0&oq=bou&sll=38.997934,-105.550567&sspn=4.285594,7.053223&t=m&ie=UTF8&hq=&hnear=Boulder,+Colorado&ll=40.014986,-105.270546&spn=0.132006,0.220413&z=12', style='color: #0000FF; text-align: left;') View Larger Map
+  include includes/foot

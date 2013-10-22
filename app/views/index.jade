@@ -1,6 +1,7 @@
 extends layout
 
 block content
+  section(data-ng-view)
   h1= title
   each event in events.event
     li= event.title
