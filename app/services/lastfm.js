@@ -1,16 +1,13 @@
-var rest = require('restler');
+var request = require('request');
 
 exports.get = function(method, callback) {
   var apiKey = process.env.LAST_FM_KEY;
-  rest.get('http://ws.audioscrobbler.com/2.0/', {
-    query: {
+  request.get('http://ws.audioscrobbler.com/2.0/', {
+    qs: {
       api_key: apiKey
     , format: 'json'
     , method: method
     , location: 'boulder'
     }
-  })
-  .on('complete', function(result) {
-    callback(result);
-  });
+  }, callback);
 };
